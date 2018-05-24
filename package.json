@@ -1,0 +1,33 @@
+{
+  "name": "Meetup-TSOA-example",
+  "version": "0.0.1",
+  "description": "TSOA example for the meetup",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "build": "yarn build:tsoa && tsc",
+    "build:tsoa": "tsoa swagger && tsoa routes"
+  },
+  "author": "Andreas Rotaru <Andreas.Rotaru@gmail.com>",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "https": "^1.0.0",
+    "method-override": "^2.3.6",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "swagger-ui-express": "3.0.8",
+    "tsoa": "2.1.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "0.0.30",
+    "@types/express": "^4.0.30",
+    "@types/method-override": "0.0.27",
+    "@types/node": "^6.0.33",
+    "ncp": "^2.0.0",
+    "typescript": "2.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukeautry/tsoa-example.git"
+  }
+}
